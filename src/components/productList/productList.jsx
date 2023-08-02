@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 
 import ProductItem from "../productItem/productItem";
 
@@ -65,6 +66,7 @@ const getTotalPrice = (items = []) => {
 
 const ProductList = () => {
   const [addedItems, setAddedItems] = useState([]);
+
   const { tg } = useTelegram();
 
   const onAdd = (product) => {
